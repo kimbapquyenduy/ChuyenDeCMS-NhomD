@@ -19,6 +19,23 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
 
 		<link rel="profile" href="https://gmpg.org/xfn/11">
+		
+		<!-- Module 2: -->
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module2.css" type="text/css" media="screen" />
+
+		<!-- Module 4: -->
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module4.css" type="text/css" media="screen" />
+
+		<!-- Module 5: -->
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module5.css" type="text/css" media="screen" />
+
+        <!-- Chèn bootstrap; Lê Anh Vũ; -->
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <!--__________ Include the above in your HEAD tag __________-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
 		<?php wp_head(); ?>
 
@@ -30,7 +47,7 @@
 		wp_body_open();
 		?>
 
-		<header id="site-header" class="header-footer-group">
+		<header id="site-header" class="header-footer-group" role="banner">
 
 			<div class="header-inner section-inner">
 
@@ -85,7 +102,7 @@
 					if ( has_nav_menu( 'primary' ) || ! has_nav_menu( 'expanded' ) ) {
 						?>
 
-							<nav class="primary-menu-wrapper" aria-label="<?php echo esc_attr_x( 'Horizontal', 'menu', 'twentytwenty' ); ?>">
+							<nav class="primary-menu-wrapper" aria-label="<?php echo esc_attr_x( 'Horizontal', 'menu', 'twentytwenty' ); ?>" role="navigation">
 
 								<ul class="primary-menu reset-list-style">
 
