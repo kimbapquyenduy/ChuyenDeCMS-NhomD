@@ -1398,6 +1398,7 @@ body:not(.enable-search-modal) .header-titles-wrapper {
 .site-title a:hover,
 .site-title a:focus {
 	text-decoration: none;
+	color: #6d6d6d;
 }
 
 .site-description {

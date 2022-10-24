@@ -21,6 +21,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 	<?php wp_head(); ?>
 
@@ -68,6 +69,12 @@
 					// Site description.
 
 					?>
+
+					<form role="search" class="search-form" role="search" method="get" action="http://wordpress.local/">
+						<input type="search" id="search-form-1" class="search-field" placeholder="Search" aria-label="Search" aria-describedby="search-addon" value name="s" />
+						<input type="submit" class="search-submit" value="Submit">
+					</form>
+
 
 
 				</div><!-- .header-titles -->
