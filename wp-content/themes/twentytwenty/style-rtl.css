@@ -1397,7 +1397,7 @@ body:not(.enable-search-modal) .header-titles-wrapper {
 
 .site-title a:hover,
 .site-title a:focus {
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 .site-description {
