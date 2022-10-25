@@ -54,6 +54,14 @@ with others.
 /*	0. CSS Reset
 /* -------------------------------------------------------------------------- */
 
+.dropdown-menu.show{
+	display: inline-block;
+	width: 150px;
+	left: -40px;
+}
+body:not(.overlay-header) .header-inner .toggle-wrapper::before{
+	background-color: none;
+}
 
 html,
 body {
@@ -305,7 +313,7 @@ h6,
 .faux-heading {
 	font-feature-settings: "lnum";
 	font-variant-numeric: lining-nums;
-	font-weight: 700;
+	
 	letter-spacing: -0.0415625em;
 	line-height: 1.25;
 	margin: 3.5rem 0 2rem;
@@ -499,7 +507,8 @@ ol ol ol {
 
 li {
 	line-height: 1.5;
-	margin: 0.5rem 0 0 2rem;
+	margin: 0.5rem 0 0 0rem;
+	padding-left: 1rem;
 }
 
 li > ul,
@@ -1265,6 +1274,7 @@ button.toggle {
 	display: flex;
 	flex-wrap: nowrap;
 	margin: 0 0 -0.8rem -0.8rem;
+
 }
 
 .search-form .search-field,
@@ -1281,11 +1291,26 @@ button.toggle {
 }
 
 .search-form .search-field {
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	margin-left: 2.8rem;
+	height: 20px;
 	width: 100%;
 }
 
 .search-form .search-submit {
 	flex-shrink: 0;
+	margin-left: 10px;
+	font-size: 14px;
+	   height: 32px;
+	line-height: 0;
+	font-weight: 500;
+	text-transform: none;
+	color: #6d6d6d!important;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	   border-radius: 4px;
+   
 }
 
 .search-form .search-submit:focus,
@@ -1387,23 +1412,26 @@ body:not(.enable-search-modal) .header-titles-wrapper {
 .site-logo,
 .site-description {
 	margin: 0;
+	text-align: center;
+	padding-top: 0;
+	padding-bottom: 0;
 }
 
 .site-title {
-	font-size: 2rem;
-	/* font-weight: 600; */
+	font-size: 2.1rem;
+	font-weight: 600;
 	line-height: 1;
 }
 
 .site-title a {
-	color: inherit;
+	color: #6d6d6d;
 	display: block;
 	text-decoration: none;
 }
 
 .site-title a:hover,
 .site-title a:focus {
-	text-decoration: none;
+	text-decoration: underline;
 
 
 }
@@ -1478,6 +1506,7 @@ body:not(.enable-search-modal) .site-logo img {
 
 .header-navigation-wrapper {
 	display: none;
+	margin-right: 30px;
 }
 
 /* Header Toggles ---------------------------- */
@@ -4911,7 +4940,7 @@ a.to-the-top > * {
 
 	.site-title {
 		font-size: 2rem;
-		font-weight: 700;
+		
 	}
 
 	.site-description {
@@ -5756,9 +5785,41 @@ a.to-the-top > * {
 	}
 
 	.header-toggles {
+
 		display: flex;
 		flex-shrink: 0;
 		margin-right: -3rem;
+		text-decoration: none;
+	}
+	.header-toggles li{
+		text-decoration: none;
+		list-style-type: none;
+		text-align: center;
+	}
+	.header-toggles .dropdown ul li{
+		text-align: left;
+		list-style-type: none;
+	   }
+	   .header-toggles .dropdown ul li a{
+		font-size: 14px;
+		color: #000 !important;
+		text-decoration: none;
+	   }
+	   .header-toggles .dropdown ul li:hover{
+		background-color: #6d6d6d;
+	   }
+	   .header-toggles .dropdown-toggle{
+		   text-decoration: none;
+		   
+	   }
+	   .header-toggles .dropdown-toggle	i{
+margin-right: 20px;		
+	}
+	  
+	body:not(.overlay-header) .primary-menu > li#menu-item-16 > a,
+	body:not(.overlay-header) .primary-menu > li#menu-item-17 > a,
+	.header-toggles .dropdown-toggle  {
+color: #6b6b6b;
 	}
 
 	.header-inner .toggle {
@@ -5777,7 +5838,7 @@ a.to-the-top > * {
 	}
 
 	.header-inner .toggle-wrapper::before {
-		background: #dedfdf;
+		/* background: #dedfdf; */
 		content: "";
 		display: block;
 		height: 2.7rem;
@@ -6459,6 +6520,15 @@ a.to-the-top > * {
 		margin-right: 0;
 	}
 
+}
+
+
+header .header-inner{
+	padding:0 ;
+}
+.header-titles .site-title.faux-heading{
+	background-color: #e7e7e7;
+	padding: 25px 10px 25px 10px;
 }
 
 @media ( min-width: 1330px ) {

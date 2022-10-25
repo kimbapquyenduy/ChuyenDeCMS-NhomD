@@ -21,7 +21,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<link rel="profile" href="https://gmpg.org/xfn/11">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
 	<?php wp_head(); ?>
 
@@ -68,12 +75,9 @@
 
 					// Site description.
 
+					include_once "searchform.php";
 					?>
 
-					<form role="search" class="search-form" role="search" method="get" action="http://wordpress.local/">
-						<input type="search" id="search-form-1" class="search-field" placeholder="Search" aria-label="Search" aria-describedby="search-addon" value name="s" />
-						<input type="submit" class="search-submit" value="Submit">
-					</form>
 
 
 
@@ -171,7 +175,29 @@
 
 						<?php
 						}
+
+
+
 						?>
+						<div class="toggle-wrapper dropdown-toggle-wrapper">
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+									<i class="fa fa-user-circle-o"></i><br>
+									Account <span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu">
+									<li><a href="#">Action</a></li>
+									<li><a href="#">Another action</a></li>
+									<li><a href="#">Something else here</a></li>
+									<li role="separator" class="divider"></li>
+									<li><a href="#">Separated link</a></li>
+									<li><a href="http://wordpress.local/admin">Login</a></li>
+									<li><a href="http://wordpress.local/wp-admin/profile.php">Profile</a></li>
+									<li><a href="http://wordpress.local/wp-login.php?loggedout=true&wp_lang=en_US">Log out</a></li>
+								</ul>
+							</li>
+						</div>
+
 
 					</div><!-- .header-toggles -->
 				<?php
