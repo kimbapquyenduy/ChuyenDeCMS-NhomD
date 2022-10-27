@@ -15,9 +15,18 @@
 ?>
 <footer id="site-footer" class="header-footer-group">
 	<div class="social-icon">
-		<p>hello</p>
+		<i class="fa-brands fa-facebook-f"></i>
+		<i class="fa-brands fa-instagram"></i>
+		<i class="fa-brands fa-twitter"></i>
+		<i class="fa-brands fa-google-plus-g"></i>
+		<i class="fa-regular fa-envelope"></i>
 	</div>
-	<br>
+	<div class="sub-footer-text">
+
+		Báo cáo quá trình nhóm D
+
+	</div>
+
 	<div class="section-inner">
 
 		<div class="footer-credits">
@@ -29,7 +38,7 @@
 					_x('Y', 'copyright date format', 'twentytwenty')
 				);
 				?>
-				<a href="<?php echo esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
+				<a href="<?php echo esc_url(home_url('/')); ?>">Nhom D</a>
 			</p><!-- .footer-copyright -->
 
 			<?php
@@ -38,28 +47,11 @@
 			}
 			?>
 
-			<p class="powered-by-wordpress">
-				<a href="<?php echo esc_url(__('https://wordpress.org/', 'twentytwenty')); ?>">
-					<?php _e('Powered by WordPress', 'twentytwenty'); ?>
-				</a>
-			</p><!-- .powered-by-wordpress -->
+
 
 		</div><!-- .footer-credits -->
 
-		<a class="to-the-top" href="#site-header">
-			<span class="to-the-top-long">
-				<?php
-				/* translators: %s: HTML character for up arrow. */
-				printf(__('To the top %s', 'twentytwenty'), '<span class="arrow" aria-hidden="true">&uarr;</span>');
-				?>
-			</span><!-- .to-the-top-long -->
-			<span class="to-the-top-short">
-				<?php
-				/* translators: %s: HTML character for up arrow. */
-				printf(__('Up %s', 'twentytwenty'), '<span class="arrow" aria-hidden="true">&uarr;</span>');
-				?>
-			</span><!-- .to-the-top-short -->
-		</a><!-- .to-the-top -->
+
 
 	</div><!-- .section-inner -->
 
