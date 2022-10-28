@@ -73,7 +73,9 @@
 
 					// Site description.
 					twentytwenty_site_description();
+					include "searchform.php";
 					?>
+
 
 				</div><!-- .header-titles -->
 
@@ -170,6 +172,24 @@
 						<?php
 						}
 						?>
+						<div class="toggle-wrapper dropdown-toggle-wrapper">
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+									<i class="fa fa-user-circle-o"></i><br>
+									Account <span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu">
+									<li><a href="#">Action</a></li>
+									<li><a href="#">Another action</a></li>
+									<li><a href="#">Something else here</a></li>
+									<li role="separator" class="divider"></li>
+									<li><a href="#">Separated link</a></li>
+									<li><a href="http://wordpress.local/admin">Login</a></li>
+									<li><a href="http://wordpress.local/wp-admin/profile.php">Profile</a></li>
+									<li><a href="http://wordpress.local/wp-login.php?loggedout=true&wp_lang=en_US">Log out</a></li>
+								</ul>
+							</li>
+						</div>
 
 					</div><!-- .header-toggles -->
 				<?php
