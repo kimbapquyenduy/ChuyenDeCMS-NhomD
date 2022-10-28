@@ -1397,7 +1397,12 @@ body:not(.enable-search-modal) .header-titles-wrapper {
 
 .site-title a:hover,
 .site-title a:focus {
+<<<<<<< HEAD
 	text-decoration: underline;
+=======
+	text-decoration: none;
+	color: #6d6d6d;
+>>>>>>> 08-LeQuyenDuy/module1
 }
 
 .site-description {
