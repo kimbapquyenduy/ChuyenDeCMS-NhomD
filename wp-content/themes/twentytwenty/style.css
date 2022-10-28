@@ -55,10 +55,6 @@ with others.
 /* -------------------------------------------------------------------------- */
 
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 08-LeQuyenDuy/module1
 html,
 body {
 	border: none;
@@ -309,11 +305,7 @@ h6,
 .faux-heading {
 	font-feature-settings: "lnum";
 	font-variant-numeric: lining-nums;
-<<<<<<< HEAD
-	font-weight: 700;
-=======
 	
->>>>>>> 08-LeQuyenDuy/module1
 	letter-spacing: -0.0415625em;
 	line-height: 1.25;
 	margin: 3.5rem 0 2rem;
@@ -507,12 +499,8 @@ ol ol ol {
 
 li {
 	line-height: 1.5;
-<<<<<<< HEAD
-	margin: 0.5rem 0 0 2rem;
-=======
 	margin: 0.5rem 0 0 0rem;
 	padding-left: 1rem;
->>>>>>> 08-LeQuyenDuy/module1
 }
 
 li > ul,
@@ -1278,10 +1266,6 @@ button.toggle {
 	display: flex;
 	flex-wrap: nowrap;
 	margin: 0 0 -0.8rem -0.8rem;
-<<<<<<< HEAD
-=======
-
->>>>>>> 08-LeQuyenDuy/module1
 }
 
 .search-form .search-field,
@@ -1298,20 +1282,15 @@ button.toggle {
 }
 
 .search-form .search-field {
-<<<<<<< HEAD
-=======
 	border: 1px solid #ccc;
 	border-radius: 4px;
 	margin-left: 2.8rem;
 	height: 20px;
->>>>>>> 08-LeQuyenDuy/module1
 	width: 100%;
 }
 
 .search-form .search-submit {
 	flex-shrink: 0;
-<<<<<<< HEAD
-=======
 	margin-left: 10px;
 	font-size: 14px;
 	   height: 32px;
@@ -1323,7 +1302,6 @@ button.toggle {
 	border: 1px solid #ccc;
 	   border-radius: 4px;
    
->>>>>>> 08-LeQuyenDuy/module1
 }
 
 .search-form .search-submit:focus,
@@ -1425,12 +1403,9 @@ body:not(.enable-search-modal) .header-titles-wrapper {
 .site-logo,
 .site-description {
 	margin: 0;
-<<<<<<< HEAD
-=======
 	text-align: center;
 	padding-top: 0;
 	padding-bottom: 0;
->>>>>>> 08-LeQuyenDuy/module1
 }
 
 .site-title {
@@ -1440,11 +1415,7 @@ body:not(.enable-search-modal) .header-titles-wrapper {
 }
 
 .site-title a {
-<<<<<<< HEAD
-	color: inherit;
-=======
 	color: #6d6d6d;
->>>>>>> 08-LeQuyenDuy/module1
 	display: block;
 	text-decoration: none;
 }
@@ -1452,11 +1423,8 @@ body:not(.enable-search-modal) .header-titles-wrapper {
 .site-title a:hover,
 .site-title a:focus {
 	text-decoration: underline;
-<<<<<<< HEAD
-=======
 
 
->>>>>>> 08-LeQuyenDuy/module1
 }
 
 .site-description {
@@ -1529,10 +1497,7 @@ body:not(.enable-search-modal) .site-logo img {
 
 .header-navigation-wrapper {
 	display: none;
-<<<<<<< HEAD
-=======
 	margin-right: 30px;
->>>>>>> 08-LeQuyenDuy/module1
 }
 
 /* Header Toggles ---------------------------- */
@@ -4965,13 +4930,8 @@ a.to-the-top > * {
 	}
 
 	.site-title {
-<<<<<<< HEAD
-		font-size: 2.4rem;
-		font-weight: 700;
-=======
 		font-size: 2rem;
 		
->>>>>>> 08-LeQuyenDuy/module1
 	}
 
 	.site-description {
@@ -5816,11 +5776,6 @@ a.to-the-top > * {
 	}
 
 	.header-toggles {
-<<<<<<< HEAD
-		display: flex;
-		flex-shrink: 0;
-		margin-right: -3rem;
-=======
 
 		display: flex;
 		flex-shrink: 0;
@@ -5856,7 +5811,6 @@ margin-right: 20px;
 	body:not(.overlay-header) .primary-menu > li#menu-item-17 > a,
 	.header-toggles .dropdown-toggle  {
 color: #6b6b6b;
->>>>>>> 08-LeQuyenDuy/module1
 	}
 
 	.header-inner .toggle {
@@ -5875,11 +5829,7 @@ color: #6b6b6b;
 	}
 
 	.header-inner .toggle-wrapper::before {
-<<<<<<< HEAD
-		background: #dedfdf;
-=======
 		/* background: #dedfdf; */
->>>>>>> 08-LeQuyenDuy/module1
 		content: "";
 		display: block;
 		height: 2.7rem;
@@ -6563,8 +6513,6 @@ color: #6b6b6b;
 
 }
 
-<<<<<<< HEAD
-=======
 
 header .header-inner{
 	padding:20px ;
@@ -6574,7 +6522,6 @@ header .header-inner{
 	padding: 25px 10px 25px 10px;
 }
 
->>>>>>> 08-LeQuyenDuy/module1
 @media ( min-width: 1330px ) {
 
 

@@ -79,9 +79,6 @@
 					include_once "searchform.php";
 					?>
 
-
-
-
 				</div><!-- .header-titles -->
 
 				<button class="toggle nav-toggle mobile-nav-toggle" data-toggle-target=".menu-modal" data-toggle-body-class="showing-menu-modal" aria-expanded="false" data-set-focus=".close-nav-toggle">
