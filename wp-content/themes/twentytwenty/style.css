@@ -6498,3 +6498,70 @@ a.to-the-top > * {
 		top: 0;
 	}
 }
+.entry-content .wp-block-categories-list  {
+    
+}
+.entry-content .categories a{
+	text-decoration: none;
+	font-size: 15px;
+	
+	
+}
+.entry-content .categories{
+	background-color: #e7ebef;
+	height: 170px;
+}
+.entry-content .list-category{
+	background-color: white;
+	height: 250px;
+}
+.entry-content .category{
+	text-align: left;
+    padding-top: 0%;
+	margin-top: 0%;
+	font-family: "Times New Roman";
+    letter-spacing: normal;
+}
+
+.entry-content .post a{
+	text-decoration: none;
+	font-size: 15px;
+	
+}
+.entry-content .post{
+	left:0%;
+	margin-left: 0%;
+	padding-left: 0%;
+	background-color: white;
+	height: 250px;
+	
+}
+.entry-content .recent{
+	text-align: center;
+    padding-top: 0%;
+	margin-top: 0%;
+	font-family: "Times New Roman";
+    letter-spacing: normal;
+}
+.entry-content .content_post{
+	background-color: #dab454 !important;
+}
+.entry-content .title {
+	text-align: center;
+    padding-top: 0%;
+	margin-top: 0%;
+	font-family: "Times New Roman";
+    letter-spacing: normal;
+}
+
+
+.entry-content ul{
+	list-style: none;
+	
+}
+
+.entry-content .recent_post{
+	background-color: #e7ebef;
+	height: 170px;
+}
+
