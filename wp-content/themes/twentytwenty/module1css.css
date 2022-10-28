@@ -68,3 +68,21 @@
 body:not(.overlay-header) .primary-menu > li > a{
     color: gray!important;
 }
+header .header-inner{
+    padding: 20px!important;
+}
+.dropdown-menu.show{
+	display: inline-block;
+	width: 150px;
+	left: -40px;
+}
+body:not(.overlay-header) .header-inner .toggle-wrapper::before{
+	background-color: none;
+}
+.header-toggles .dropdown ul li:hover{
+    background-color: #6d6d6d;
+   }
+.header-toggles .dropdown-toggle{
+       text-decoration: none;
+       
+}

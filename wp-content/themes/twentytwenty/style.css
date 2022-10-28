@@ -54,14 +54,7 @@ with others.
 /*	0. CSS Reset
 /* -------------------------------------------------------------------------- */
 
-.dropdown-menu.show{
-	display: inline-block;
-	width: 150px;
-	left: -40px;
-}
-body:not(.overlay-header) .header-inner .toggle-wrapper::before{
-	background-color: none;
-}
+
 
 html,
 body {
@@ -6524,7 +6517,7 @@ color: #6b6b6b;
 
 
 header .header-inner{
-	padding:0 ;
+	padding:20px ;
 }
 .header-titles .site-title.faux-heading{
 	background-color: #e7e7e7;
