@@ -50,7 +50,7 @@ if (!is_single()) {
 											the_content(__('Continue reading', 'twentytwenty'));
 										} else {
 											$post = get_post();
-											echo substr($post->post_content, 0, 200) . '<a style="color:teal;" href="' . esc_url(get_permalink()) . '">[..]</a>';
+											echo substr($post->post_content, 0, 200) . '<a class="see-more" style="color:teal;" href="' . esc_url(get_permalink()) . '">[..]</a>';
 										}
 									}
 									?>
@@ -115,7 +115,7 @@ if (!is_single()) {
 				</article> <!-- .post -->
 
 			</div>
-			<div class="col-md-2"></div>
+
 		</div>
 	</div>
 <?php } else { ?>
