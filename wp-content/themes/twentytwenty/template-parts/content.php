@@ -20,8 +20,6 @@ if (!is_single()) {
 			<div class="col-md-2"></div>
 			<div class="col-md-8" style="margin-top: 20px;">
 
-
-
 				<article <?php post_class($class); ?> id="post-<?php the_ID(); ?>">
 					<div class="row">
 						<div class="col-md-3">
