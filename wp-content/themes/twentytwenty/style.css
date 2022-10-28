@@ -499,7 +499,8 @@ ol ol ol {
 
 li {
 	line-height: 1.5;
-	margin: 0.5rem 0 0 2rem;
+	margin: 0.5rem 0 0 0rem;
+	padding-left: 1rem;
 }
 
 li > ul,
