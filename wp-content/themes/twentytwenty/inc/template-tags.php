@@ -422,8 +422,8 @@ function twentytwenty_get_post_meta($post_id = null, $location = 'single-top')
 							</span>
 							<span class="meta-text">
 								<span class="day-month">
-									<span class="day" href="<?php the_permalink(); ?>"><?php the_time('d'); ?></span><br>
-									<span class="month" href="<?php the_permalink(); ?>">tháng<?php the_time('m'); ?></span>
+									<span class="day"><?php the_time('d'); ?></span><br>
+									<span class="month">tháng<?php the_time('m'); ?></span>
 								</span>
 							</span>
 						</li>
