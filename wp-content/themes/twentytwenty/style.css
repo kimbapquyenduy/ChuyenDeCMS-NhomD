@@ -1,3 +1,49 @@
+.containerr {
+    padding-left: 70px;
+}
+
+.gachchan{
+	text-decoration: overline;
+}
+
+.container.row.col-10 {
+    padding-left: 40px;
+}
+
+.content {
+  width: 30px;
+}
+
+span.arrow {
+    padding-left: 80px;
+
+}
+a.previous-post {
+    text-decoration: none;
+	color: black;
+}
+
+span.arrow {
+    color: black;
+    text-decoration: none;
+}
+
+a.next-p {
+    text-decoration: none;
+	color: black;
+}
+
+.container {
+	width: 40% !important;
+    color: black;
+    padding-top: 30px;
+	padding-left: 300px;
+	font-size: 20px;
+}
+
+
+
+
 /*
 Theme Name: Twenty Twenty
 Text Domain: twentytwenty
@@ -1008,7 +1054,7 @@ section {
 	max-width: 58rem;
 }
 
-.section-inner.small {
+.small {
 	max-width: 80rem;
 }
 
