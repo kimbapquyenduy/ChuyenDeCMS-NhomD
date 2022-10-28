@@ -5753,10 +5753,29 @@ a.to-the-top > * {
 		margin-left: 3rem;
 	}
 
+<<<<<<< Updated upstream
 	.header-toggles {
 		display: flex;
 		flex-shrink: 0;
 		margin-right: -3rem;
+=======
+	
+	.header-toggles li{
+		text-decoration: none;
+		list-style-type: none;
+		text-align: center;
+	}
+	
+	  
+	   .header-toggles .dropdown-toggle	i{
+margin-right: 20px;		
+	}
+	  
+	body:not(.overlay-header) .primary-menu > li#menu-item-16 > a,
+	body:not(.overlay-header) .primary-menu > li#menu-item-17 > a,
+	.header-toggles .dropdown-toggle  {
+color: #6b6b6b;
+>>>>>>> Stashed changes
 	}
 
 	.header-inner .toggle {
