@@ -29,7 +29,7 @@ if (empty($twentytwenty_aria_label) && !empty($args['label'])) {
 	<label class="module4-searchWrapper" for="<?php echo esc_attr($twentytwenty_unique_id); ?>">
 		<span class="screen-reader-text"><?php _e('Search for:', 'twentytwenty'); // phpcs:ignore: WordPress.Security.EscapeOutput.UnsafePrintingFunction -- core trusts translations 
 											?></span>
-		<input type="search" id="<?php echo esc_attr($twentytwenty_unique_id); ?>" class="search-field module4-searchField" placeholder="<?php /* echo esc_attr_x( 'Search &hellip;', 'placeholder', 'twentytwenty' ); */ ?>Search topics or keywords" value="<?php echo get_search_query(); ?>" name="s" />
+		<input type="search" id="<?php echo esc_attr($twentytwenty_unique_id); ?>" class="search-field module4-searchField" placeholder="<?php /* echo esc_attr_x( 'Search &hellip;', 'placeholder', 'twentytwenty' ); */ ?>Search" value="<?php echo get_search_query(); ?>" name="s" />
 		<!-- <div class="search-icon-wrapper">
 			<img class="search-icon-img" src="<?php echo get_template_directory_uri() ?>/assets/images/icons/icon__search.png"></img>
 		</div> -->
