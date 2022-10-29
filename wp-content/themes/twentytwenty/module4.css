@@ -9,7 +9,7 @@
 }
 
 .search-form.module4-searchBox .module4-searchField {
-    padding: 18px 18px 18px 66px;
+    padding: 15px 0px 14px 0px;
     font-size: 18px;
     margin: 0;
     line-height: 42px;
@@ -24,7 +24,7 @@
     display: inline-block;
     position: absolute;
     top: 50%;
-    right: 18px;
+    right: -67px;
     text-transform: capitalize;
     font-weight: normal;
     font-size: 18px;
@@ -47,4 +47,9 @@
     display: inline-block;
     width: 30px;
     height: auto;
+}
+.search-modal .search-submit{
+    color: white!important;
+    right: 9px!important;
+    padding: 25px 25px!important;
 }

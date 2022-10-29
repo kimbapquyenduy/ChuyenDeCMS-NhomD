@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The searchform.php template.
  *
@@ -15,26 +16,23 @@
  * Generate a unique ID for each form and a string containing an aria-label
  * if one was passed to get_search_form() in the args array.
  */
-$twentytwenty_unique_id = twentytwenty_unique_id( 'search-form-' );
+$twentytwenty_unique_id = twentytwenty_unique_id('search-form-');
 
-$twentytwenty_aria_label = ! empty( $args['aria_label'] ) ? 'aria-label="' . esc_attr( $args['aria_label'] ) . '"' : '';
+$twentytwenty_aria_label = !empty($args['aria_label']) ? 'aria-label="' . esc_attr($args['aria_label']) . '"' : '';
 // Backward compatibility, in case a child theme template uses a `label` argument.
-if ( empty( $twentytwenty_aria_label ) && ! empty( $args['label'] ) ) {
-	$twentytwenty_aria_label = 'aria-label="' . esc_attr( $args['label'] ) . '"';
+if (empty($twentytwenty_aria_label) && !empty($args['label'])) {
+	$twentytwenty_aria_label = 'aria-label="' . esc_attr($args['label']) . '"';
 }
 ?>
-<form role="search" <?php echo $twentytwenty_aria_label; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Escaped above. ?> method="get" class="search-form module4-searchBox" action="<?php echo esc_url( home_url( '/' ) ); ?>">
-	<label class="module4-searchWrapper" for="<?php echo esc_attr( $twentytwenty_unique_id ); ?>">
-		<span class="screen-reader-text"><?php _e( 'Search for:', 'twentytwenty' ); // phpcs:ignore: WordPress.Security.EscapeOutput.UnsafePrintingFunction -- core trusts translations ?></span>
-		<input type="search"
-			id="<?php echo esc_attr( $twentytwenty_unique_id ); ?>"
-			class="search-field module4-searchField"
-			placeholder="<?php /* echo esc_attr_x( 'Search &hellip;', 'placeholder', 'twentytwenty' ); */ ?>Search topics or keywords"
-			value="<?php echo get_search_query(); ?>"
-			name="s" />
-		<div class="search-icon-wrapper">
+<form role="search" <?php echo $twentytwenty_aria_label; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Escaped above. 
+					?> method="get" class="search-form module4-searchBox" action="<?php echo esc_url(home_url('/')); ?>">
+	<label class="module4-searchWrapper" for="<?php echo esc_attr($twentytwenty_unique_id); ?>">
+		<span class="screen-reader-text"><?php _e('Search for:', 'twentytwenty'); // phpcs:ignore: WordPress.Security.EscapeOutput.UnsafePrintingFunction -- core trusts translations 
+											?></span>
+		<input type="search" id="<?php echo esc_attr($twentytwenty_unique_id); ?>" class="search-field module4-searchField" placeholder="<?php /* echo esc_attr_x( 'Search &hellip;', 'placeholder', 'twentytwenty' ); */ ?>Search topics or keywords" value="<?php echo get_search_query(); ?>" name="s" />
+		<!-- <div class="search-icon-wrapper">
 			<img class="search-icon-img" src="<?php echo get_template_directory_uri() ?>/assets/images/icons/icon__search.png"></img>
-		</div>
+		</div> -->
 	</label>
-	<input type="submit" class="search-submit module4-submitBtn" value="<?php echo esc_attr_x( 'Search', 'submit button', 'twentytwenty' ); ?>" />
+	<input type="submit" class="search-submit module4-submitBtn" value="<?php echo esc_attr_x('Search', 'submit button', 'twentytwenty'); ?>" />
 </form>
