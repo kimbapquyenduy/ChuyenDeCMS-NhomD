@@ -1,8 +1,15 @@
 .containerr {
     padding-left: 70px;
+	width: 40% !important;
+    color: black;
+
+	font-size: 20px;
+}
+.container-navigation{
+	padding-left: 47rem;
 }
 
-.gachchan{
+ .gachchan{
 	text-decoration: overline;
 }
 
@@ -33,13 +40,13 @@ a.next-p {
 	color: black;
 }
 
-.container {
+/* .container {
 	width: 40% !important;
     color: black;
     padding-top: 30px;
 	padding-left: 300px;
 	font-size: 20px;
-}
+}  */
 
 
 
