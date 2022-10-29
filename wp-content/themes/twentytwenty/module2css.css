@@ -1,0 +1,54 @@
+.main-content-module2 .post-meta .day-month .day{
+    color: black;
+    font-family: 'Prata', serif;
+    font-size: 2.5em;
+    line-height: 1em;
+    margin-left: 15px;
+}
+
+.main-content-module2 .line-ver{
+    border-left: 2px solid black;
+    float: left;
+    margin: 20px 0;
+}
+.main-content-module2 .entry-content p{
+    margin: 0 !important;
+}
+.has-text-align-center.align-none{
+    text-align: left !important;
+}
+.post-inner{
+    padding-top: 1.3rem !important;
+    padding-bottom: 20px;
+}
+.main-content-module2 .post-edit.meta-wrapper{
+display: none;
+}
+body p,body em{
+    font-style: normal;
+   
+}
+.main-content-module2 .entry-header h2 a{
+    color: #75aad8;
+    font-size: 2rem;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+} 
+.main-content-module2 .entry-header h2{
+   line-height: 0.3 !important;
+
+}
+.main-content-module2 .entry-header-inner{
+    margin: 0;
+}
+.main-content-module2 .post-meta li.post-date{
+    text-align: center;
+
+}
+.main-content-module2{
+    background-color: white;
+}
+.see-more{
+    text-decoration: none;
+}
+
