@@ -77,18 +77,90 @@ get_header();
 	<?php
 	}
 
-	if (have_posts()) {
 
+	if (have_posts()) {
 		$i = 0;
 
-		while (have_posts()) {
-			$i++;
-			if ($i > 1 && is_single()) {
-				echo '<hr class="post-separator styled-separator is-style-wide section-inner" aria-hidden="true" />';
-			}
-			the_post();
+		if (is_search()) {
 
-			get_template_part('template-parts/content', get_post_type());
+
+			while (have_posts()) {
+				the_post();
+
+				// Get posts:
+				$_post = get_post();
+
+				// Get post title:
+				$post_title = $post->post_title;
+
+				// Get post content:
+				$content = $post->post_content;
+
+				$temp = substr(
+					$_post->post_content,
+					strpos($_post->post_content, "<!-- wp:paragraph -->"),
+					strpos($_post->post_content, "<!-- /wp:paragraph -->")
+				);
+
+				// Get post url:
+				$post_url = get_permalink();
+
+				// Get post image url:
+				preg_match('/src="([^"]*)"/', $content, $matches);
+				preg_match('/(?<!_)src=([\'"])?(.*?)\\1/', $content, $matches);
+				$post_img_element = "";
+				if (count($matches) != 0) {
+					$post_img_element = "<img $matches[0]>";
+				}
+
+				// Get post creation date:
+				$day = substr(get_post()->post_date, 8, 2);
+				$month = substr(get_post()->post_date, 5, 2);
+				$year = substr(get_post()->post_date, 0, 4);
+
+				// Display:
+				echo "
+				<div class='module5-search-results'>
+					<div class='row module5-card-wrapper'>
+						<div class='col-md-7 module5-card'>
+							<div class='row'>
+
+								<div class='col-md-7 col-xs-7 left-section'>
+									<div class='section-wrapper'>
+										<div class='img-wrapper'>
+											$post_img_element
+										</div>
+										<div class='creation-date-wrapper'>
+											<div class='day'>$day</div>
+											<div class='month'>Tháng $month</div><br>
+										</div>
+									</div>
+								</div>
+								<div class='col-md-5 col-xs-5 right-section'>
+									<div class='content-wrapper'>
+										<div class='post-title-wrapper'>
+											<a class='post-title' href='$post_url'>$post_title</a>
+										</div>
+										$temp <a href='$post_url'>[...]</a>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+            	";
+			}
+		} else {
+			while (have_posts()) {
+				$i++;
+				if ($i > 1 && is_single()) {
+					echo '<hr class="post-separator styled-separator is-style-wide section-inner" aria-hidden="true" />';
+				}
+				the_post();
+
+				get_template_part('template-parts/content', get_post_type());
+			}
 		}
 	} elseif (is_search()) {
 	?>
