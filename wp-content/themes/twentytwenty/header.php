@@ -31,6 +31,7 @@
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module1css.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module4.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module5.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/module6910.css" type="text/css" media="screen" />
 
 	<?php wp_head(); ?>
 
